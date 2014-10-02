@@ -4,25 +4,42 @@
     <meta charset="UTF-8">
     <title>Всё о кенгуру</title>
     <style type="text/css">
+        /*22px~=1.5em*/
+        /*1px=0.07em*/
 
         html, body {
-            font-family: sans-serif;
-            font-size: 0.95em;
-            line-height: 20px;
+            font-family: sans-serif; /*шрифт статьи*/
+            font-size: 0.95em; /*Размер шрифта*/
+            line-height: 1.5em; /*Межстрочный интервал*/
+            margin: 0;  /* Обнуляем отступы браузера*/
         }
+
+        #left_side {
+            float: left;
+            width: 10% ;
+            background-color: lightgrey;
+        }
+
+        #right_side {
+            margin-left: 12%
+        }
+
         #main_pic { /* Оформление главного изображения */
-            margin: 3px; /* Отступ от краев фотографии */
+            margin: 0.07em; /* Отступ от краев фотографии */
             border-color: black; /* Цвет границы 1px*/
         }
+
         hr { /* Оформление подчеркивания названий разделов*/
-            margin-top: -15px; /*Поднятие вверх на 20 px из-за большого отступа*/
+            margin-top: -1.05em; /*Поднятие вверх на 20 px из-за большого отступа*/
         }
+
         .break_line { /*Оформление красной строки у абзацев*/
-            text-indent: 40px; /*Отступ от края экрана*/
+            text-indent: 2.8em; /*Отступ от края экрана*/
 
         }
+
         a:hover {
-            color: mediumseagreen;
+            color: mediumseagreen; /*Выделение ссылки при наведении на неё*/
         }
 
     </style>
@@ -33,8 +50,16 @@
 h1 - Название статьи
 h3 - Заголовки разделов
 .break_line - Красная строка для абзацев.
-
 -->
+<!-- Левый блок -->
+<div id="left_side">
+    <p><a href="main.html" target="_blank">Главная страница</a></p>
+    <p><a href="Australia.html" target="_blank">Австралия</a></p>
+    <p><a href="https://vk.com/topic-38946087_29915800" target="_blank">Инсургент</a></p>
+</div>
+
+<!-- Правый блок -->
+<div id="right_side">
     <header>
         <h1>Кенгуру</h1>    <!-- Название статьи -->
     </header>
@@ -106,20 +131,7 @@ h3 - Заголовки разделов
         </ul>
 
     </article>
-
-
-
-    <blockquote>
-
-<pre>
-<big>
-    <small>
-        <sub>
-            <sup>
-                <a>
-                            <del>
-                                <ins>
-
+    </div>
 
 </body>
 </html>
